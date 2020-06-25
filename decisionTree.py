@@ -3,7 +3,8 @@ import math
 from typing import Dict, TypeVar, List, Any, NamedTuple, Optional, Union
 from collections import defaultdict, Counter
 
-df = pd.read_csv('recrutation.csv', usecols=['Level', 'Programming Language', 'Social_media_active', 'Higher education',
+df = pd.read_csv('https://raw.githubusercontent.com/AdrianPajka/DecisionTree---Help-for-X-s-company/master/recrutation.csv',
+                 usecols=['Level', 'Programming Language', 'Social_media_active', 'Higher education',
                                              'Good interview impression'])
 data_to_list = df.values.tolist()
 inputs = []
